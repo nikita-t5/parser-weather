@@ -49,7 +49,7 @@ public class Parser {
     }
 
     public static void main(String[] args) throws Exception {
-        Document page = getPage(); //HTML код страницы
+        Document page = getPage();   //HTML код страницы
         //css query language. Для того чтобы достать table со страницы. Table на этом сайте это таблица, в которой все нужные нам данные
         Element tableWth = page.select("table[class=wt]").first();
         Elements names = tableWth.select("tr[class=wth]"); //получить из tableWth только те tr, у которых class = wth
